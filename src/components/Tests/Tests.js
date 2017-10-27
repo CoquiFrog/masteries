@@ -32,7 +32,7 @@ class Tests extends Component {
                <div className="box5">This box is floated right</div>
                <br></br>
                <br></br>
-               <div className="inlineit">
+               <div className="nodisplay">
                    <p>This is </p>
                    <p>an example of</p>
                    <p>making things disappear </p>
