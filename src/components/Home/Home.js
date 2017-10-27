@@ -21,7 +21,7 @@ class Home extends Component {
                 <div className="App">
                     <Link to='/tests'><button className='gradient bigbutton'>Tests</button></Link>
                     </div>
-                
+                    <Link to='/video'><button className='gradient bigbutton'>Video</button></Link>
 
             </div>
         );

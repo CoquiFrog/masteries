@@ -39,11 +39,11 @@ class Tests extends Component {
                    <p>with display!</p>
                </div>
 
-               <div className="App papyrus shaker">Hello hello hello </div>
+               <div className="App papyrus shaker" id="theid">Hello hello hello </div>
 
                <div className="App fader">Goodbye goodbye goodbye</div>
 
-               <li><a href="#section1">First Problem</a></li>
+               <li><a href="#section1">First Section</a></li>
 
             </div>
         );

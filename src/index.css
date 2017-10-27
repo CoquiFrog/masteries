@@ -20,8 +20,9 @@ body {
 }
 
 ID usage
+
 #theid { 
-  font: yellow;
+  background-color: yellow;
 }
 
 /* Proof of font usage and background color and background image */
