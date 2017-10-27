@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import {updateName} from './../../ducks/reducer'
 
 class Buttons extends Component {
     constructor(props) {
@@ -19,4 +20,11 @@ class Buttons extends Component {
     }
 }
 
-export default Buttons;
+function mapStateToProps(state){
+    return state
+}
+const outputActions ={
+    updateName
+}
+
+export default connect(mapStateToProps) (Buttons);

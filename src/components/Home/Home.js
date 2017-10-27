@@ -12,7 +12,20 @@ class Home extends Component {
     render() {
         return (
             <div>
-               
+               <Link to='/Buttons'><button className='gradient bigbutton'>Soundboard</button></Link>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            
+            <div className="shaker">Hello hello hello </div>
+            
+            <div className="fader">Goodbye goodbye goodbye</div>
+            
+            
+            
             </div>
         );
     }
