@@ -4,6 +4,32 @@ body {
   font-family: sans-serif;
 }
 
+/* Proof of font usage and background color and background image */
+/* Check app.js line 12 for className background color and font,
+ and check home.js line 14 for image */
+ 
+.papyrus{
+		font-family: Papyrus, fantasy;
+		font-size: 32px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 900;
+		line-height: 32px;
+  }
+  
+  .backimage {
+    background-image: url('./img/butterfly.jpeg');
+    background-size: cover;
+    height: 1000px;
+        
+}
+
+.backgroundcolor {
+  background-color: #15ADE2
+}
+	
+
+
 .gradient {
   color: #EE0707;
   text-shadow: -2px 2px #346392;

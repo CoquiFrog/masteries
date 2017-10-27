@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import {updateName} from './../../ducks/reducer'
+import {updateName} from './../../ducks/reducer';
+import { goup, godown } from './../Counter/Counter';
 
 class Buttons extends Component {
     constructor(props) {
@@ -11,9 +12,15 @@ class Buttons extends Component {
         }
     }
     render() {
+        const {
+            currentValue,
+            goup,
+            godown
+        } = this.props;
+        
         return (
         <div>
-            <div>Hello</div>
+            <div>Hello {JSON.stringify( this.props.currentValue)}</div>
 
         </div>
         );

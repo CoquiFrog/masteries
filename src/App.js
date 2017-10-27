@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
       
-        <p className="App-intro">
+        <p className="backgroundcolor">
           Welcome to the application made by Paul
         </p>
         {router}

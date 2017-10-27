@@ -11,7 +11,7 @@ class Home extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="backimage">
                <Link to='/Buttons'><button className='gradient bigbutton'>Soundboard</button></Link>
             <br></br>
             <br></br>
@@ -20,7 +20,7 @@ class Home extends Component {
             <br></br>
             <br></br>
             
-            <div className="shaker">Hello hello hello </div>
+            <div className="papyrus shaker">Hello hello hello </div>
             
             <div className="fader">Goodbye goodbye goodbye</div>
             
