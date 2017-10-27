@@ -12,6 +12,7 @@ class Tests extends Component {
     render() {
         return (
             <div className="backimage">
+                <div id="section1"></div>
                <br></br>
                <div className="box">This is a static box</div>
                <br></br>
@@ -34,15 +35,15 @@ class Tests extends Component {
                <div className="inlineit">
                    <p>This is </p>
                    <p>an example of</p>
-                   <p> inline </p>
-                   <p>display!</p>
+                   <p>making things disappear </p>
+                   <p>with display!</p>
                </div>
 
                <div className="App papyrus shaker">Hello hello hello </div>
 
                <div className="App fader">Goodbye goodbye goodbye</div>
 
-
+               <li><a href="#section1">First Problem</a></li>
 
             </div>
         );
