@@ -7,9 +7,9 @@ import './index.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
       
-        <p className="backgroundcolor">
+        <p className="App backgroundcolor">
           Welcome to the application made by Paul
         </p>
         {router}

@@ -4,10 +4,20 @@ body {
   font-family: sans-serif;
 }
 
+.center{
+  margin: 0 auto;
+  
+}
+
+.center2{
+  display: flex;
+  justify-content: center;
+}
+
 /* Proof of font usage and background color and background image */
 /* Check app.js line 12 for className background color and font,
  and check home.js line 14 for image */
- 
+
 .papyrus{
 		font-family: Papyrus, fantasy;
 		font-size: 32px;
@@ -27,6 +37,83 @@ body {
 .backgroundcolor {
   background-color: #15ADE2
 }
+/* Showing command of box model manipulation */
+.box{
+  position: static;
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  
+  color: #EB1518;
+  background-color: yellow;
+  margin: 0 auto;
+  border: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+
+.box2{
+  position: fixed;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  
+  color: #5315EB;
+  background-color: #00E6FF;
+  margin: 0 auto;
+  border: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+  
+
+
+.box3{
+  position: absolute;
+  max-width: 90px;
+  display: flex;
+  justify-content: center;
+  
+  color: #15EB4E;
+  background-color: #FF00A2;
+  margin: 0 auto;
+  border: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+.box4{
+  position: relative;
+  max-width: 90px;
+  display: flex;
+  justify-content: center;
+  
+  color: #C64A0C;
+  background-color: #DDD320;
+  margin: 0 auto;
+  border: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+.box5{
+  max-width: 90px;
+ 
+  
+  color: #602508;
+  background-color: #382003;
+  margin: 0 auto;
+  border: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  float:right;
+}
+  
+.inlineit{
+  display:inline;
+}
+	
 	
 
 

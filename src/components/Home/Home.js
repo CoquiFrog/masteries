@@ -12,20 +12,17 @@ class Home extends Component {
     render() {
         return (
             <div className="backimage">
-               <Link to='/Buttons'><button className='gradient bigbutton'>Soundboard</button></Link>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            
-            <div className="papyrus shaker">Hello hello hello </div>
-            
-            <div className="fader">Goodbye goodbye goodbye</div>
-            
-            
-            
+                <div className="App">
+                    <Link to='/buttons'><button className='gradient bigbutton'>Soundboard</button></Link>
+                
+</div>
+                <br></br>
+                <br></br>
+                <div className="App">
+                    <Link to='/tests'><button className='gradient bigbutton'>Tests</button></Link>
+                    </div>
+                
+
             </div>
         );
     }
