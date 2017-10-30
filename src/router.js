@@ -13,6 +13,7 @@ export default (
         <Route path='/tests' component={Tests}
         render={() => <h3>This is my render right here!</h3> } />/>
         <Route path='/product/:id' component={Product}/>
+        <Route path='/mount' component={Mount}/>
         
     </Switch>
 

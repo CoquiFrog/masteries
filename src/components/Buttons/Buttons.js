@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import {updateName} from './../../ducks/reducer';
 import { goup, godown } from './../Counter/Counter';
 import Functional, { } from './../Functional/Functional';
+import {updateName, updateID} from './../../ducks/reducer';
 
 class Buttons extends Component {
     constructor(props) {
@@ -30,9 +30,13 @@ stateSetter(){
         
         return (
         <div>
-            <div>Hello {JSON.stringify( this.props.currentValue)}</div>
+            <div></div>
              <div><button onClick={()=>this.stateSetter()}>setState function {this.state.tester}</button></div>
             <Functional tester={this.state.tester}/> 
+            <div>Hello {this.props.asset_id}</div>
+            <div>And here {this.props.assetName}</div>
+            <button onClick={()=>this.props.updateName('Jerk')}>Action Creator </button>
+            <button onClick={()=>this.props.updateID(5)}>Action Creator </button>
         </div>
         );
     }
@@ -45,4 +49,4 @@ const outputActions ={
     updateName
 }
 
-export default connect(mapStateToProps) (Buttons);
+export default connect(mapStateToProps,{updateName, updateID}) (Buttons);
