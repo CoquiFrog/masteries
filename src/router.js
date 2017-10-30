@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Buttons from './components/Buttons/Buttons';
 import Tests from './components/Tests/Tests';
 import Video from './components/Video/Video';
+import Product from './Product/Product';
 
 export default (
     <Switch>
@@ -11,7 +12,8 @@ export default (
         <Route path='/buttons' component={Buttons}/>
         <Route path='/tests' component={Tests}
         render={() => <h3>This is my render right here!</h3> } />/>
-        <Route path='/video' component={Video}/>
+        <Route path='/product/:id' component={Product}/>
+        
     </Switch>
 
 
