@@ -22,7 +22,7 @@ class Home extends Component {
                     <Link to='/tests'><button className='gradient bigbutton'>Tests</button></Link>
                     </div>
                     <Link to='/video'><button className='gradient bigbutton'>Video</button></Link>
-
+                    <Link to='/htmlstuff'><button className='gradient bigbutton'>HTML</button></Link>
             </div>
         );
     }

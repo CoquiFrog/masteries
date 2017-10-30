@@ -5,6 +5,7 @@ import { goup, godown } from './../Counter/Counter';
 import Functional, { } from './../Functional/Functional';
 import {updateName, updateID} from './../../ducks/reducer';
 import {getLukeSkywalker} from './../../services/starWars'
+import axios from 'axios';
 
 class Buttons extends Component {
     constructor(props) {
@@ -12,17 +13,32 @@ class Buttons extends Component {
         this.stateSetter = this.stateSetter.bind(this);
         this.state = {
             tester: 0,
-            luke: {}
+            luke: {},
+            names: {},
+            nameArray: {}
         }
     }
 
-    componentDidMount(){
-        getLukeSkywalker().then(luke => {
-            this.setState({
-                luke: luke
-            })
+    // componentDidMount(){
+    //     getLukeSkywalker().then(luke => {
+    //         this.setState({
+    //             luke: luke
+    //         })
+    //     })
+    // }
+
+    componentDidMount() {
+        axios.get('/api/getOne').then((res) => {
+          console.log(res);
+    
+         
+          this.setState({
+            names: res.data,
+            nameArray: res.data[0]
+          })
         })
-    }
+      }
+
 
 stateSetter(){
     this.setState({
@@ -42,12 +58,18 @@ stateSetter(){
         <div>
             <div></div>
              <div><button onClick={()=>this.stateSetter()}>setState function {this.state.tester}</button></div>
+             {/* Here is the version with the bind you requested! */}
+            <div><button onClick={this.stateSetter.bind()}>setState function {this.state.tester}</button></div>
             <Functional tester={this.state.tester}/> 
             <div>Hello {this.props.asset_id}</div>
             <div>And here {this.props.assetName}</div>
             <button onClick={()=>this.props.updateName('Jerk')}>Action Creator </button>
             <button onClick={()=>this.props.updateID(5)}>Action Creator </button>
-            <div>{this.state.luke.name}</div>
+            
+            <div>WHY ARE YOU NOT WORKING?!?!?!?!</div>
+            <div>WHY ARE YOU NOT WORKING?!?!?!?!</div>
+            <div>WHY ARE YOU NOT WORKING?!?!?!?!</div>
+            <div>WHY ARE YOU NOT WORKING?!?!?!?!</div>
         </div>
         );
     }
