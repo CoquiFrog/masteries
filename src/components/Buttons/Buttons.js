@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {updateName} from './../../ducks/reducer';
 import { goup, godown } from './../Counter/Counter';
-import {Functional} from './../Functional/Functional';
+import Functional, { } from './../Functional/Functional';
 
 class Buttons extends Component {
     constructor(props) {
         super(props);
+        this.stateSetter = this.stateSetter.bind(this);
         this.state = {
             tester: 0
         }
@@ -30,8 +31,8 @@ stateSetter(){
         return (
         <div>
             <div>Hello {JSON.stringify( this.props.currentValue)}</div>
-             <div><button onClick={()=>this.props.updateName()}>setState function</button></div>
-            {/* <Functionial/> */}
+             <div><button onClick={()=>this.stateSetter()}>setState function {this.state.tester}</button></div>
+            <Functional tester={this.state.tester}/> 
         </div>
         );
     }
