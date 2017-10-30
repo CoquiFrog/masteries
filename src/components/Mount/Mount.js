@@ -1,31 +1,38 @@
-export default class Mount extends React.Component {
-    constructor(props) {
-      super(props);
+// import React, { Component } from 'react';
+// import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
+// import axios from 'axios';
+
+// export default class Mount extends React.Component {
+//     constructor(props) {
+//       super(props);
   
-      this.state = {product: []};
-    }
+//       this.state = {
+//           vehiclesToDisplay: {}
+//         }
+//     }
   
-    componentDidMount() {
-      this.UserList();
-    }
+//     componentDidMount() {
+//       this.UserList();
+//     }
   
-    UserList() {
-      $.getJSON('https://randomuser.me/api/')
-        .then(({ results }) => this.setState({ product: results }));
-    }
+//     UserList() {
+//         axios.get('https://swapi.co/api/people/1')
+//                   .then( res => {
+                    
+//                       this.setState({
+//                         vehiclesToDisplay: res.data
+//                       });
+//     });
+// }
   
-    render() {
-      const products = this.state.products.map((item, i) => (
-        <div>
-          <h1>{ item.id }</h1>
-          <span>{ item.price }, { item.title }</span>
-        </div>
-      ));
+//     render() {
+      
   
-      return (
-      <div>
-          <div>{ products }</div>
-        </div>
-      );
-    }
-  }
+//       return (
+//       <div>
+//           <div>{ this.state.vehiclesToDisplay }</div>
+//         </div>
+//       );
+//     }
+//   }

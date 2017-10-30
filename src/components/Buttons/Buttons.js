@@ -4,14 +4,24 @@ import { Link } from 'react-router-dom';
 import { goup, godown } from './../Counter/Counter';
 import Functional, { } from './../Functional/Functional';
 import {updateName, updateID} from './../../ducks/reducer';
+import {getLukeSkywalker} from './../../services/starWars'
 
 class Buttons extends Component {
     constructor(props) {
         super(props);
         this.stateSetter = this.stateSetter.bind(this);
         this.state = {
-            tester: 0
+            tester: 0,
+            luke: {}
         }
+    }
+
+    componentDidMount(){
+        getLukeSkywalker().then(luke => {
+            this.setState({
+                luke: luke
+            })
+        })
     }
 
 stateSetter(){
@@ -37,6 +47,7 @@ stateSetter(){
             <div>And here {this.props.assetName}</div>
             <button onClick={()=>this.props.updateName('Jerk')}>Action Creator </button>
             <button onClick={()=>this.props.updateID(5)}>Action Creator </button>
+            <div>{this.state.luke.name}</div>
         </div>
         );
     }
