@@ -13,17 +13,120 @@ body {
   margin: 0 auto;
   
 }
-
+/*regular class using flexbox utilized on line 17 of Tests.js*/
 .center2{
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+
 }
 
-ID usage
+/*id selector*/
 
 #theid { 
   background-color: yellow;
 }
+
+
+/*child selector*/
+div > p { 
+  background-color: #4D16D1;
+}
+
+/*addition selector*/
+div + p { 
+  background-color: #0EE462;
+}
+
+/*descendant selector*/
+
+div p {
+  background-color: #0778BF;
+}
+
+/*psuedo selectors*/
+
+.super:disabled{
+  background-color: pink;
+}
+
+.super2:focus{
+  background-color: #b4da55;
+}
+
+.super3:hover{
+  background-color: tomato;
+}
+
+.super4:nth-child(2){
+  background-color: brown;
+}
+/* shadow utilized on line 20 of Tests.js */
+.shadows{
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/*put into effect on Tests.js line 23 */
+.grad {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, yellow); /* Standard syntax */
+  height: 50px;
+  width: 50px;
+}
+
+/*word wrap text effect line 23 of Tests.js*/
+.wordwrap{
+  word-wrap: break-word;
+}
+
+/* css variable declared */
+
+.variablenow{
+  --main-bg-color: brown;
+}
+
+/* css variable used */
+.variableused{
+  background-color: var(--main-bg-color);
+}
+
+/*CSS grid utilized line 52 of Tests.js */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
 
 /* Proof of font usage and background color and background image */
 /* Check app.js line 12 for className background color and font,
