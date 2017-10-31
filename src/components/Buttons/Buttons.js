@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { goup, godown } from './../Counter/Counter';
+import axios from 'axios';
 import Functional, { } from './../Functional/Functional';
 import {updateName, updateID} from './../../ducks/reducer';
 import {getLukeSkywalker} from './../../services/starWars'
-import axios from 'axios';
 
 class Buttons extends Component {
     constructor(props) {

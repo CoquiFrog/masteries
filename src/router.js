@@ -17,6 +17,7 @@ export default (
         <Route path='/product/:id' component={Product}/>
         {/* <Route path='/mount' component={Mount}/> */}
         <Route path='/htmlstuff' component={Htmlstuff} />
+        <Route path='/Api' component={Api}/>
         
     </Switch>
 
