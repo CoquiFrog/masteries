@@ -11,6 +11,8 @@ class Htmlstuff extends Component {
         super(props);
         this.state = {
             tester: 0,
+            nameArray: {},
+            name: {}
            
         }
     }
@@ -20,8 +22,8 @@ class Htmlstuff extends Component {
           console.log(res);
     
           this.setState({
-            kanjiArray: res.data,
-            kanji: res.data[0]
+            nameArray: res.data,
+            name: res.data[0]
           })
         })
       }

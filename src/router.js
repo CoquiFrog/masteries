@@ -12,7 +12,8 @@ export default (
     <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/buttons' component={Buttons}/>
-        <Route path='/tests' component={Tests}
+        <Route path='/tests' component={Tests}/>
+        <Route path='/video' component={Video}/>
         render={() => <h3>This is my render right here!</h3> } />/>
         <Route path='/product/:id' component={Product}/>
         {/* <Route path='/mount' component={Mount}/> */}

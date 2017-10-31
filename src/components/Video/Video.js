@@ -27,11 +27,7 @@ class Video extends Component {
                 <div> HIIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
                 <div> HIIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
                 <div> HIIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
-                <audio
-  src="https://www.computerhope.com/jargon/m/example.mp3"
-  autoplay>
-  Your browser does not support the <code>audio</code> element.
-</audio>
+          
                 <div> HIIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
                 <div> HIIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
                 <div> HIIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>

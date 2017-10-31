@@ -18,5 +18,5 @@ massive (connectionString).then( dbInstance => {
 
 app.get('/api/getNew', data_controller.getOne);
 
-const port = 3000;
+const port = 3002;
 app.listen( port, () => { console.log(`Server listening on port ${port}.`); } );

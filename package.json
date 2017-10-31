@@ -26,10 +26,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CoquiFrog/masteries.git",
-    "proxy": "http://localhost:3000"
+    "url": "git+https://github.com/CoquiFrog/masteries.git"
+    
     
   },
+  "proxy": "http://localhost:3002",
   "keywords": [],
   "author": "",
   "license": "ISC",
