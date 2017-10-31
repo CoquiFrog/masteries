@@ -6,6 +6,7 @@ import Tests from './components/Tests/Tests';
 import Video from './components/Video/Video';
 import Product from './Product/Product';
 import Htmlstuff from './components/Htmlstuff/Htmlstuff';
+import Api from './components/Api/Api';
 // import Mount from './components/Mount/Mount';
 
 export default (
